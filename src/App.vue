@@ -1,11 +1,11 @@
 <template>
   <header>
     <HeaderComponent />
-    <JumbotronComponent />
-    <CalendarioComponent />
   </header>
   <main>
-    <SectionComponent />
+    <JumbotronComponent />
+    <!-- <CalendarioComponent />
+    <SectionComponent /> -->
   </main>
 
   <footer>
