@@ -6,7 +6,9 @@
     <section>
       <JumbotronComponent />
     </section>
-
+    <section>
+      <FirmaComponent />
+    </section>
   </main>
 
   <footer>
@@ -19,13 +21,15 @@ import JumbotronComponent from './components/JumbotronComponent.vue'
 import FooterComponent from './components/FooterComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 import CountDownComponent from './components/CountDownComponent.vue';
+import FirmaComponent from './components/FirmaComponent.vue';
 
 export default {
   components: {
     HeaderComponent,
     FooterComponent,
     JumbotronComponent,
-    CountDownComponent
+    CountDownComponent,
+    FirmaComponent
   }
 }
 </script>
