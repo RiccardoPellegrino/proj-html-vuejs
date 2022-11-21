@@ -3,13 +3,14 @@
     <HeaderComponent />
   </header>
   <main>
-    <JumbotronComponent />
-    <!-- <CalendarioComponent />
-    <SectionComponent /> -->
+    <section>
+      <JumbotronComponent />
+    </section>
+
   </main>
 
   <footer>
-    <FooterComponent />
+    <!-- <FooterComponent /> -->
   </footer>
 </template>
 
@@ -17,15 +18,14 @@
 import JumbotronComponent from './components/JumbotronComponent.vue'
 import FooterComponent from './components/FooterComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
-import CalendarioComponent from './components/CalendarioComponent.vue'
-import SectionComponent from './components/SectionComponent.vue'
+import CountDownComponent from './components/CountDownComponent.vue';
+
 export default {
   components: {
     HeaderComponent,
     FooterComponent,
     JumbotronComponent,
-    CalendarioComponent,
-    SectionComponent
+    CountDownComponent
   }
 }
 </script>

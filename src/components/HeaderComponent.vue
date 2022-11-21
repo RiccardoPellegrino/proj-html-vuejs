@@ -2,7 +2,7 @@
     <nav class="nav-bar bg-light">
         <div class="smallcontainer">
             <a class="navbar-brand" href="#">
-                <img src="public\images\MasterStudy-1.svg" alt="Logo" width="150" height="24"
+                <img src="public\images\MasterStudy-1.svg" alt="Logo" width="300" height="30"
                     class="d-inline-block align-text-top">
             </a>
             <div class="navigazione d-flex align-items-center">
