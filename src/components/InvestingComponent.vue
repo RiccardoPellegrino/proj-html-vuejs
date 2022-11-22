@@ -7,7 +7,7 @@
                 pellentesque
                 urna elementum
                 cursus.</p>
-            <div class="mt-5"><img src="public/images/amazon.png" alt=""></div>
+            <div class="mt-5"> <a href=""> <img src="public/images/amazon.png" alt=""> </a></div>
         </div>
         <div id="mano">
             <img src="public/images/book.png" alt="">
