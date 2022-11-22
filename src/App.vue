@@ -11,7 +11,7 @@
     </section>
     <CoursesComponent />
     <section>
-
+      <InvestingComponent />
     </section>
 
   </main>
@@ -28,6 +28,7 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import CountDownComponent from './components/CountDownComponent.vue';
 import FirmaComponent from './components/FirmaComponent.vue';
 import CoursesComponent from './components/CoursesComponent.vue';
+import InvestingComponent from './components/InvestingComponent.vue';
 export default {
   components: {
     HeaderComponent,
@@ -35,7 +36,8 @@ export default {
     JumbotronComponent,
     CountDownComponent,
     FirmaComponent,
-    CoursesComponent
+    CoursesComponent,
+    InvestingComponent
   }
 }
 </script>
