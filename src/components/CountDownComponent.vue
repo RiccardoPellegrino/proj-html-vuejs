@@ -44,11 +44,6 @@ export default {
     width: 50%;
 }
 
-.no-bordo {
-    border: 0 solid black;
-
-}
-
 .h-40 {
     height: 40px;
 }

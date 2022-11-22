@@ -13,6 +13,17 @@ body {
     background-color: black;
 }
 
+.text-dovegray {
+    color: $dovegray;
+}
+
+.text-silver {
+    color: $silver;
+}
+
+.text-fuelyellow {
+    color: $fuelyellow;
+}
 
 .text-white {
     color: $white;
@@ -30,6 +41,10 @@ body {
     background-color: $buttercup;
 }
 
+.bg-fuelyellow {
+    background-color: $fuelyellow;
+}
+
 .bg-abbey {
     background-color: $abbey;
 }
@@ -42,9 +57,16 @@ body {
     background-color: $white;
 }
 
+.bg-blackhaze {
+    background-color: $blackhaze;
+}
 
+//UTILITY
 
+.no-bordo {
+    border: 0 solid black;
 
+}
 
 
 
