@@ -101,6 +101,4 @@ footer {
     margin: 0 auto;
     padding-top: 30px;
 }
-
-#pages {}
 </style>

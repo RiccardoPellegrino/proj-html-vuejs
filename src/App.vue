@@ -14,7 +14,7 @@
       <InvestingComponent />
     </section>
     <section>
-      <WhymyCoursesComponent />
+      <ReasonsComponent />
     </section>
     <section>
       <StatisticComponent />
@@ -37,7 +37,7 @@ import CountDownComponent from './components/CountDownComponent.vue';
 import FirmaComponent from './components/FirmaComponent.vue';
 import CoursesComponent from './components/CoursesComponent.vue';
 import InvestingComponent from './components/InvestingComponent.vue';
-import WhymyCoursesComponent from './components/WhymyCoursesComponent.vue';
+import ReasonsComponent from './components/ReasonsComponent.vue';
 import StatisticComponent from './components/StatisticComponent.vue';
 import StudentsComponent from './components/StundetsComponent.vue';
 export default {
@@ -49,11 +49,22 @@ export default {
     FirmaComponent,
     CoursesComponent,
     InvestingComponent,
-    WhymyCoursesComponent,
+    ReasonsComponent,
     StatisticComponent,
     StudentsComponent
-  }
+  },
+  data() {
+    return {
+      // store
+    };
+  },
+  // created() {
+  //   start() {
+  //     this.$refs.online.start();
+  //   }
+  // }
 }
+
 </script>
 
 <style lang="scss" scoped>
