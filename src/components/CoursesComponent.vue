@@ -4,12 +4,8 @@
             <h1 class="text-center py-5">New Courses</h1>
         </div>
         <div id="card-container">
-            <CourseCardComponent />
-            <CourseCardComponent />
-            <CourseCardComponent />
-            <CourseCardComponent />
-            <CourseCardComponent />
-            <CourseCardComponent />
+            <CourseCardComponent v-for="(miaCarta, index) in store.corsi" :datiInInput="miaCarta" />
+
         </div>
         <div id="containerLoadMore">
             <button id="bottoneLoadMore" class="text-white bg-buttercup no-bordo rounded-5">LOAD MORE</button>
@@ -20,8 +16,14 @@
 
 <script>
 import CourseCardComponent from './CourseCardComponent.vue';
+import { store } from './store';
 export default {
     name: 'CoursesComponent',
+    data() {
+        return {
+            store
+        };
+    },
     components: {
         CourseCardComponent
     }

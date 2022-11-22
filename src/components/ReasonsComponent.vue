@@ -5,10 +5,7 @@
         </div>
         <div class="contenitore">
             <div class="contenitoreInterno">
-                <ReasonCardComponent />
-                <ReasonCardComponent />
-                <ReasonCardComponent />
-                <ReasonCardComponent />
+                <ReasonCardComponent v-for="(miaCarta, index) in store.reasons" :datiInInput="miaCarta" />
             </div>
         </div>
     </div>
@@ -16,11 +13,18 @@
 
 <script>
 import ReasonCardComponent from './ReasonCardComponent.vue';
+import { store } from './store';
+
 
 export default {
     name: "ReasonsComponent",
+    data() {
+        return {
+            store
+        };
+    },
     components: {
-        ReasonCardComponent
+        ReasonCardComponent,
     }
 }
 </script>

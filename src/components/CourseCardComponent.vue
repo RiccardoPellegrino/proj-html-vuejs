@@ -1,29 +1,36 @@
 <template>
     <div class="card">
         <div class="card-image">
-            <img src="public/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="">
-            <div id="special" class="bg-fuelyellow text-white">SPECIAL</div>
+            <img :src="datiInInput.image" alt="">
+            <div id="special" class="bg-fuelyellow text-white">{{ datiInInput.tag }}</div>
         </div>
         <div>
             <div>
-                <p id="titolozzo">How to be a DJ? Make Electronic Music</p>
+                <p id="titolozzo">{{ datiInInput.titolo }}</p>
             </div>
             <div>
-                <p id="sottotitolo" class="text-silver">Electronic</p>
+                <p id="sottotitolo" class="text-silver">{{ datiInInput.sottotitolo }}</p>
             </div>
         </div>
         <hr>
         <div id="pulsantiera">
-            <div> <span class="text-buttercup"><i class="fas fa-signal">&nbsp</i></span> Advanced</div>
-            <div> <span class="text-buttercup"><i class="fa-sharp fa-solid fa-list">&nbsp</i></span>8 Lectures</div>
-            <div> <span class="text-buttercup"><i class="fa-regular fa-clock">&nbsp</i></span> 6 Hours</div>
+            <div> <span class="text-buttercup"><i class="fas fa-signal">&nbsp</i></span>{{ datiInInput.tipo }}</div>
+            <div> <span class="text-buttercup"><i class="fa-sharp fa-solid fa-list">&nbsp</i></span>{{
+                    datiInInput.lezioni
+            }} Lectures</div>
+            <div> <span class="text-buttercup"><i class="fa-regular fa-clock">&nbsp</i></span>{{ datiInInput.ore }}
+                Hours
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'CourseCardComponent'
+    name: 'CourseCardComponent',
+    props: [
+        'datiInInput'
+    ]
 }
 </script>
 
@@ -56,7 +63,7 @@ p {
 
 #titolozzo {
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding: 20px 30px 0px 30px;
 }
 
