@@ -81,7 +81,7 @@ li {
     padding-right: 1.2rem;
 }
 
-a {
+li a {
     color: black;
     font-weight: 700;
     display: inline;
