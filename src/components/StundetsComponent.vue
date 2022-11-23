@@ -63,8 +63,16 @@ export default {
             this.selezionaStudenteSuccessivo();
             setTimeout(this.cambiaStudente, 5000);
         },
+
         selezionaStudentePrecedente() {
-            this.indiceStudenteAttivo = (this.indiceStudenteAttivo - 1) < 0 ? store.studenti.length - 1 : this.indiceStudenteAttivo - 1;
+
+            if (this.indiceStudenteAttivo - 1 >= 0) {
+                this.indiceStudenteAttivo = this.indiceStudenteAttivo - 1;
+            } else {
+                this.indiceStudenteAttivo = store.studenti.length - 1;
+            }
+
+            //this.indiceStudenteAttivo = (this.indiceStudenteAttivo - 1) < 0 ? store.studenti.length - 1 : this.indiceStudenteAttivo - 1;
             this.aggiornaInformazioniStudenti();
         },
         selezionaStudenteSuccessivo() {
