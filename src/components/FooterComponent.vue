@@ -11,8 +11,9 @@
                         Theme featured by Learning <br>
                         Management System (LMS) for online <br>
                         education.Developed by StylemixThemes.</p>
-                    <li> <i class="fa-brands fa-facebook"></i>&nbsp;
-                        &nbsp;<i class="fa-brands fa-twitter"></i> &nbsp; &nbsp; <i class="fa-brands fa-instagram"></i>
+                    <li> <a href=""><i class="fa-brands fa-facebook text-mineshaft"></i></a> &nbsp;
+                        &nbsp; <a href=""><i class="fa-brands fa-twitter text-mineshaft"></i></a> &nbsp; &nbsp; <a
+                            href=""><i class="fa-brands fa-instagram text-mineshaft"></i></a>
                     </li>
                 </ul>
             </div>
@@ -143,5 +144,9 @@ span {
 
 img {
     width: 80px;
+}
+
+i:hover {
+    color: white;
 }
 </style>

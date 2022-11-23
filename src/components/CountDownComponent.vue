@@ -8,7 +8,7 @@
             </div>
 
             <div id="padre">
-                <input type="text" placeholder="Enter your email" class="rounded-5 no-bordo h-40">
+                <input type="email" placeholder="Enter your email" class="rounded-5 no-bordo h-40">
                 <button class="no-bordo subscribe-button bg-abbey text-white rounded-5 h-40">Subscribe</button>
             </div>
         </div>
@@ -136,7 +136,7 @@ export default {
 }
 
 input {
-    width: 100%;
+    width: 90%;
     outline: none;
 }
 
@@ -146,6 +146,6 @@ input {
 
 #padre button {
     position: absolute;
-    right: 0;
+    right: 65px;
 }
 </style>

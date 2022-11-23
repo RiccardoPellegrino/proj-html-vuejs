@@ -1,4 +1,5 @@
 <template>
+  <ScegliComponent />
   <header>
     <HeaderComponent />
   </header>
@@ -40,6 +41,7 @@ import InvestingComponent from './components/InvestingComponent.vue';
 import ReasonsComponent from './components/ReasonsComponent.vue';
 import StatisticComponent from './components/StatisticComponent.vue';
 import StudentsComponent from './components/StundetsComponent.vue';
+import ScegliComponent from './components/ScegliComponent.vue';
 export default {
   components: {
     HeaderComponent,
@@ -51,7 +53,8 @@ export default {
     InvestingComponent,
     ReasonsComponent,
     StatisticComponent,
-    StudentsComponent
+    StudentsComponent,
+    ScegliComponent
   },
   data() {
     return {

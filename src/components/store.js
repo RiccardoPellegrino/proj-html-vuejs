@@ -82,8 +82,22 @@ export const store = reactive({
 
         },
 
-    ]
+    ],
 
+    numeri: [
+        {
+            numero: 3195,
+        },
+        {
+            numero: 23,
+        },
+        {
+            numero: 437,
+        },
+        {
+            numero: 1440,
+        }
+    ],
 
 
 })

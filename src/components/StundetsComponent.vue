@@ -6,12 +6,15 @@
         <div class="mycontainer">
             <div class="testimonial">
                 <div class="testimonial-pic">
-                    <img src="public/images/1-100x100.jpg" class="user-pic" alt="">
-                    <img src="public/images/2-100x100.jpg" class="user-pic active-pic" alt="">
-                    <img src="public/images/4-100x100.jpg" class="user-pic" alt="">
+                    <img src="public/images/1-100x100.jpg" class="user-pic" :class="{ 'active-pic': show == 'pic1' }"
+                        alt="student" @click="show = 'pic1'">
+                    <img src="public/images/2-100x100.jpg" class="user-pic" :class="{ 'active-pic': show == 'pic2' }"
+                        alt="student" @click="show = 'pic2'">
+                    <img src="public/images/4-100x100.jpg" class="user-pic" :class="{ 'active-pic': show == 'pic3' }"
+                        alt="student" @click="show = 'pic3'">
                 </div>
                 <div class="testimonial-text">
-                    <h3 class="text-center pt-3">Paints of the future</h3>
+
                     <div class="stellina">
                         <span>
                             <i class="fa-star fa-solid"></i><i class="fa-star fa-solid"></i><i
@@ -19,25 +22,33 @@
                                 class="fa-star fa-solid"></i>
                         </span>
                     </div>
-                    <div class="user-text active-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
-                            doloremque quisquam pariatur ab accusantium neque perspiciatis? Fugiat cum id ut dolore
-                            aliquam quae illo tenetur, assumenda fugit vitae placeat minima voluptate repudiandae!
-                            Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum quae
-                            cum quaerat?</p>
-                    </div>
-                    <div class="user-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
-                            lorems0 voluptate repudiandae!
-                            Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum quae
-                            cum quaerat?</p>
-                    </div>
-                    <div class="user-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
-                            lorm10 minima voluptate repudiandae!
-                            Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum quae
-                            cum quaerat?</p>
-                    </div>
+                    <Transition name="fade">
+                        <div class="user-text" v-if="show == 'pic1'">
+                            <h3 class="text-center pt-3">Come as you are</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
+                                doloremque quisquam pariatur ab accusantium neque perspiciatis? Fugiat cum id ut dolore
+                                aliquam quae illo tenetur, assumenda fugit vitae placeat minima voluptate repudiandae!
+                                Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum
+                                quae
+                                cum quaerat?</p>
+                        </div>
+                        <div class="user-text" v-else-if="show == 'pic2'">
+                            <h3 class="text-center pt-3">Paints of the future</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
+                                lorems0 voluptate repudiandae!
+                                Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum
+                                quae
+                                cum quaerat?</p>
+                        </div>
+                        <div class="user-text" v-else>
+                            <h3 class="text-center pt-3">Investing for your future</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
+                                lorm10 minima voluptate repudiandae!
+                                Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum
+                                quae
+                                cum quaerat?</p>
+                        </div>
+                    </Transition>
                 </div>
 
             </div>
@@ -48,7 +59,12 @@
 
 <script>
 export default {
-    name: 'StudentsComponent'
+    name: 'StudentsComponent',
+    data() {
+        return {
+            show: 'pic1',
+        }
+    },
 }
 </script>
 
@@ -92,7 +108,7 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    // display: none;
 }
 
 .testimonial-pic {
@@ -117,14 +133,30 @@ p {
     padding: 5px;
     margin: 10px;
     cursor: pointer;
-}
-
-.user-text.active-text {
-    display: block;
+    transition: 0.3s;
+    border: 2px solid transparent;
 }
 
 .user-pic.active-pic {
-    // width: 100px;
+
     border: 2px solid $buttercup;
+}
+
+.fade-enter-active {
+    transition: all 1s ease-out;
+}
+
+.fade-leave-active {
+    transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.fade-enter-from {
+    transform: translateX(-280px);
+    opacity: 0;
+}
+
+.fade-leave-to {
+    transform: translateX(50px);
+    opacity: 0;
 }
 </style>

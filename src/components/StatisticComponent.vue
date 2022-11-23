@@ -5,29 +5,37 @@
 
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-user-friends text-white"></i></div>
-                <div class="capo" ref="online">
-                    <span class="fs-3 text-buttercup">3195</span> <span class="text-white"> online Learner</span>
+                <div class="capo">
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=3915 :duration='10' prefix='' suffix=''
+                        separator='' decimalSeparator='.' :autoinit='true' /> <span class="
+                        text-white"> online Learner</span>
                 </div>
             </div>
 
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-play-circle text-white"></i></div>
                 <div class="capo"><i class="fa fa-solid fa-clapperboard-play"></i>
-                    <span class="fs-3 text-buttercup">23</span><span class="text-white"> Video Courses </span>
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=25 :duration='10' prefix='' suffix=''
+                        separator='' decimalSeparator='.' :autoinit='true' /> <span class="text-white"> Video Courses
+                    </span>
                 </div>
             </div>
 
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-image text-white"></i></div>
                 <div class="capo">
-                    <span class="fs-3 text-buttercup">437</span><span class="text-white"> Slider & Images</span>
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=437 :duration='10' prefix='' suffix=''
+                        separator='' decimalSeparator='.' :autoinit='true' /> <span class="text-white"> Slider &
+                        Images</span>
                 </div>
             </div>
 
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-regular fa-thumbs-up text-white"></i></div>
                 <div class="capo">
-                    <span class="fs-3 text-buttercup">1440</span><span class="text-white"> Excellent Reviews</span>
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=1490 :duration='10' prefix='' suffix=''
+                        separator='' decimalSeparator='.' :autoinit='true' /> <span class="text-white"> Excellent
+                        Reviews</span>
                 </div>
             </div>
 
@@ -36,15 +44,18 @@
 </template>
 
 <script>
+import Vue3autocounter from 'vue3-autocounter';
 export default {
     name: 'StatisticComponent.vue',
-    // components: {
-    //     'vue3-autocounter': Vue3autocounter
-    // }
+    components: {
+        'vue3-autocounter': Vue3autocounter
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
 #sfondo {
     background-image: url('public/images/counter-1919x1101.jpg');
     height: 550px;
@@ -89,6 +100,8 @@ export default {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
+    color: $buttercup;
+    font-size: 25px;
 }
 
 i {
