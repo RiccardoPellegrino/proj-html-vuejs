@@ -151,7 +151,7 @@ p {
 }
 
 .fade-enter-from {
-    transform: translateX(-280px);
+    transform: translateX(-50px);
     opacity: 0;
 }
 

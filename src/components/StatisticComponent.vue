@@ -6,7 +6,7 @@
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-user-friends text-white"></i></div>
                 <div class="capo">
-                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=3915 :duration='20' prefix='' suffix=''
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=5915 :duration='20' prefix='' suffix=''
                         separator='' decimalSeparator='.' :autoinit='true' /> <span class="
                         text-white"> online Learner</span>
                 </div>
@@ -15,7 +15,7 @@
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-play-circle text-white"></i></div>
                 <div class="capo"><i class="fa fa-solid fa-clapperboard-play"></i>
-                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=25 :duration='20' prefix='' suffix=''
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=75 :duration='20' prefix='' suffix=''
                         separator='' decimalSeparator='.' :autoinit='true' /> <span class="text-white"> Video Courses
                     </span>
                 </div>
@@ -24,7 +24,7 @@
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-image text-white"></i></div>
                 <div class="capo">
-                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=437 :duration='20' prefix='' suffix=''
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=937 :duration='20' prefix='' suffix=''
                         separator='' decimalSeparator='.' :autoinit='true' /> <span class="text-white"> Slider &
                         Images</span>
                 </div>
@@ -33,7 +33,7 @@
             <div class="contenitoreStatistiche">
                 <div class="coda"><i class="fa fa-regular fa-thumbs-up text-white"></i></div>
                 <div class="capo">
-                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=1490 :duration='20' prefix='' suffix=''
+                    <vue3-autocounter ref='counter' :startAmount='0' :endAmount=4490 :duration='20' prefix='' suffix=''
                         separator='' decimalSeparator='.' :autoinit='true' /> <span class="text-white"> Excellent
                         Reviews</span>
                 </div>
