@@ -25,7 +25,7 @@
                             California<br>
                             Tel.:+1 212 485 300 32<br>
                             Fax:+1212 3752414</p>
-                        info@masterstudy.com
+                        <a href="">info@masterstudy.com</a>
                     </li>
                 </ul>
             </div>
@@ -108,7 +108,7 @@ footer {
     display: flex;
     width: 80%;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 100px
 }
 
 .contenitoreimg {

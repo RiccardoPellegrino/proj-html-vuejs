@@ -6,8 +6,8 @@
         <div class="mycontainer">
             <div class="testimonial">
                 <div class="testimonial-pic">
-                    <img src="public/images/1-100x100.jpg" class="user-pic active-pic" alt="">
-                    <img src="public/images/2-100x100.jpg" class="user-pic" alt="">
+                    <img src="public/images/1-100x100.jpg" class="user-pic" alt="">
+                    <img src="public/images/2-100x100.jpg" class="user-pic active-pic" alt="">
                     <img src="public/images/4-100x100.jpg" class="user-pic" alt="">
                 </div>
                 <div class="testimonial-text">
@@ -62,7 +62,7 @@ export default {
 
 .mycontainer {
     padding-top: 50px;
-    background-color: azure;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
