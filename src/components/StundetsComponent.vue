@@ -4,14 +4,21 @@
             <h1 class="text-center pt-5">What Students Say</h1>
         </div>
         <div class="mycontainer">
+
+
+
             <div class="testimonial">
+
                 <div class="testimonial-pic">
-                    <img src="public/images/1-100x100.jpg" class="user-pic" :class="{ 'active-pic': show == 'pic1' }"
-                        alt="student" @click="show = 'pic1'">
-                    <img src="public/images/2-100x100.jpg" class="user-pic" :class="{ 'active-pic': show == 'pic2' }"
-                        alt="student" @click="show = 'pic2'">
-                    <img src="public/images/4-100x100.jpg" class="user-pic" :class="{ 'active-pic': show == 'pic3' }"
-                        alt="student" @click="show = 'pic3'">
+                    <div @click="selezionaStudentePrecedente()" id="arrowL"><i class="fa-solid fa-arrow-left"></i></div>
+                    <img src="public/images/1-100x100.jpg" class="user-pic"
+                        :class="{ 'active-pic': indiceStudenteAttivo == 0 }" alt="student" @click="show = 'pic1'">
+                    <img src="public/images/2-100x100.jpg" class="user-pic"
+                        :class="{ 'active-pic': indiceStudenteAttivo == 1 }" alt="student" @click="show = 'pic2'">
+                    <img src="public/images/4-100x100.jpg" class="user-pic"
+                        :class="{ 'active-pic': indiceStudenteAttivo == 2 }" alt="student" @click="show = 'pic3'">
+                    <div @click="selezionaStudenteSuccessivo()" id="arrowR"><i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
                 <div class="testimonial-text">
 
@@ -23,30 +30,9 @@
                         </span>
                     </div>
                     <Transition name="fade">
-                        <div class="user-text" v-if="show == 'pic1'">
-                            <h3 class="text-center pt-3">Come as you are</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
-                                doloremque quisquam pariatur ab accusantium neque perspiciatis? Fugiat cum id ut dolore
-                                aliquam quae illo tenetur, assumenda fugit vitae placeat minima voluptate repudiandae!
-                                Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum
-                                quae
-                                cum quaerat?</p>
-                        </div>
-                        <div class="user-text" v-else-if="show == 'pic2'">
-                            <h3 class="text-center pt-3">Paints of the future</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
-                                lorems0 voluptate repudiandae!
-                                Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum
-                                quae
-                                cum quaerat?</p>
-                        </div>
-                        <div class="user-text" v-else>
-                            <h3 class="text-center pt-3">Investing for your future</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
-                                lorm10 minima voluptate repudiandae!
-                                Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum
-                                quae
-                                cum quaerat?</p>
+                        <div class="user-text">
+                            <h3 class="text-center pt-3">{{ titoloCommentoAttivo }}</h3>
+                            <p>{{ testoCommentoAttivo }}</p>
                         </div>
                     </Transition>
                 </div>
@@ -58,13 +44,41 @@
 </template>
 
 <script>
+import { store } from './store';
+
 export default {
     name: 'StudentsComponent',
     data() {
         return {
+            store,
             show: 'pic1',
+            indiceStudenteAttivo: 0,
+            titoloCommentoAttivo: ' ',
+            testoCommentoAttivo: ' ',
+
         }
     },
+    methods: {
+        cambiaStudente() {
+            this.selezionaStudenteSuccessivo();
+            setTimeout(this.cambiaStudente, 5000);
+        },
+        selezionaStudentePrecedente() {
+            this.indiceStudenteAttivo = (this.indiceStudenteAttivo - 1) < 0 ? store.studenti.length - 1 : this.indiceStudenteAttivo - 1;
+            this.aggiornaInformazioniStudenti();
+        },
+        selezionaStudenteSuccessivo() {
+            this.indiceStudenteAttivo = ++this.indiceStudenteAttivo % store.studenti.length;
+            this.aggiornaInformazioniStudenti();
+        },
+        aggiornaInformazioniStudenti() {
+            this.titoloCommentoAttivo = store.studenti[this.indiceStudenteAttivo].titoloCommento;
+            this.testoCommentoAttivo = store.studenti[this.indiceStudenteAttivo].testo;
+        }
+    },
+    created() {
+        this.cambiaStudente();
+    }
 }
 </script>
 
@@ -114,6 +128,7 @@ export default {
 .testimonial-pic {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -137,8 +152,11 @@ p {
     border: 2px solid transparent;
 }
 
-.user-pic.active-pic {
+.active-pic {
+    border: 3px solid tomato;
+}
 
+.user-pic.active-pic {
     border: 2px solid $buttercup;
 }
 
@@ -158,5 +176,15 @@ p {
 .fade-leave-to {
     transform: translateX(50px);
     opacity: 0;
+}
+
+#arrowL {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#arrowR {
+    margin-left: 20px;
+    cursor: pointer;
 }
 </style>

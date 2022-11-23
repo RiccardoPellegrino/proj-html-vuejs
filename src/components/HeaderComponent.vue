@@ -89,6 +89,7 @@ a {
 
     &:hover {
         color: $buttercup;
+        border-bottom: 2px solid $buttercup;
     }
 }
 

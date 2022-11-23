@@ -2,6 +2,27 @@ import { reactive } from "vue";
 
 export const store = reactive({
 
+    studenti: [
+        {
+            nome: "christian",
+            titoloCommento: "Come as you Are",
+            testo: "Consectetur adipisicing elit. Similique iste laborum ducimus nulla? Architecto vero expedita officia nemo reprehenderit quaerat quia, numquam eos rem dolores dignissimos deserunt sint? Aspernatur voluptates accusamus placeat provident architecto, necessitatibus, quidem tempora quia quos dolores harum dignissimos repudiandae vel ratione deleniti possimus. Enim, architecto aliquam",
+            immagine: "public/images/1-100x100.jpg"
+        },
+        {
+            nome: "Marco",
+            titoloCommento: "Paints of the Future",
+            testo: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo mollitia veritatis aspernatur vitae temporibus aperiam aliquam deleniti id excepturi, quia, error ut! Odio omnis ipsa dolorem unde quas molestiae, corrupti quae consequuntur voluptas accusamus! Officia nesciunt at magnam, deleniti magni dignissimos non inventore necessitatibus qui quos, unde nam laudantium voluptatibus.",
+            immagine: "public/images/2-100x100.jpg"
+        },
+        {
+            nome: "Marina",
+            titoloCommento: "Investing for your Future",
+            testo: "Lorem ipsum dolor sit amet, Similique iste laborum ducimus nulla? Architecto vero expedita officia nemo reprehenderit quaerat quia, numquam eos rem dolores dignissimos deserunt sint? Aspernatur voluptates accusamus placeat provident architecto, necessitatibus, quidem tempora quia quos dolores harum dignissimos repudiandae vel ratione deleniti possimus. Enim, architecto aliquam",
+            immagine: "public/images/3-100x100.jpg"
+        }
+    ],
+
     reasons: [
         {
             titolo: 'Entrepreneurship',
@@ -34,7 +55,7 @@ export const store = reactive({
             lezioni: 8,
             ore: 6,
             tag: 'SPECIAL',
-            prezzo: 49
+            prezzo: 35.99
         },
         {
             image: 'public/images/12345-1-370x200.png',
@@ -44,7 +65,7 @@ export const store = reactive({
             lezioni: 8,
             ore: 6,
             tag: 'SPECIAL',
-            prezzo: 49.50
+            prezzo: 49.58
         },
         {
             image: 'public/images/photo-1491897554428-130a60dd4757-370x200.jpeg',
@@ -54,7 +75,7 @@ export const store = reactive({
             lezioni: 6,
             ore: 6,
             tag: '',
-            prezzo: 49
+            prezzo: 60.59
         },
         {
             image: 'public/images/photo-1416339134316-0e91dc9ded92-370x200.jpeg',
@@ -64,7 +85,7 @@ export const store = reactive({
             lezioni: 6,
             ore: 6,
             tag: 'NEW',
-            prezzo: 49
+            prezzo: 22.99
         },
         {
             image: 'public/images/cathryn-lavery-67852-unsplash-370x200.jpg',
@@ -74,7 +95,7 @@ export const store = reactive({
             lezioni: 6,
             ore: 6,
             tag: '',
-            prezzo: 49
+            prezzo: 34.99
         },
         {
             image: 'public/images/photo-1475452779376-caebfb988090-370x200.jpeg',
@@ -84,7 +105,7 @@ export const store = reactive({
             lezioni: 6,
             ore: 6,
             tag: 'NEW',
-            prezzo: 49
+            prezzo: 30.49
 
         },
 
