@@ -2,11 +2,11 @@
     <nav class="nav-bar bg-light">
         <div class="smallcontainer">
             <a class="navbar-brand" href="#">
-                <img src="public\images\MasterStudy-1.svg" alt="Logo" width="300" height="30"
+                <img src="public\images\MasterStudy-1.svg" alt="Logo" width="300" height="40"
                     class="d-inline-block align-text-top">
             </a>
             <div class="navigazione d-flex align-items-center">
-                <ul class="m-0 p-0">
+                <ul class="m-0 p-0 fs-5">
                     <li v-for="(link, index) in links" :key="index">
                         <a :href="link.url">{{ link.text }} </a>
                     </li>
@@ -55,6 +55,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
 .containerc {
     display: flex;
     justify-content: center;
@@ -76,18 +78,26 @@ li {
     list-style: none;
     text-transform: capitalize;
     display: inline;
-    padding-right: 1rem;
+    padding-right: 1.2rem;
 }
 
 a {
     color: black;
-    font-weight: 500;
+    font-weight: 700;
     display: inline;
     text-decoration: none;
+
+    &:hover {
+        color: $buttercup;
+    }
 }
 
 .nav-bar {
     margin: 0 auto;
     background-color: rgb(131, 81, 15);
+}
+
+i:hover {
+    color: $buttercup;
 }
 </style>

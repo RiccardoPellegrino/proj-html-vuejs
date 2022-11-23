@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 .contenitoreSection {
     width: 100%;
-    height: 850px;
+    height: 920px;
 
 }
 

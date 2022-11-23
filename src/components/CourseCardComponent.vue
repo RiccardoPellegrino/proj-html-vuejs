@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img {
+    width: 100%;
+}
+
 .card {
     margin: 20px auto;
     width: 30%;
@@ -42,10 +46,8 @@ export default {
 
 .card-image {
     position: relative;
+    cursor: pointer;
 
-    img {
-        width: 100%;
-    }
 
     #special {
         position: absolute;

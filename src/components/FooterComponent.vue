@@ -56,15 +56,24 @@
                 <h4>Blog</h4>
                 <br>
                 <div class="d-flex flex-column">
-                    <div>
-                        <img src="public/images/photo-1517520287167-4bbf64a00d66-50x50.jpeg" alt="">
-                        <span>Our main target is to "Developing Yourself as a Leader"</span>
-                        <span>-August 9,2018</span>
+                    <div class="d-flex">
+                        <div class="contenitoreimg mb-1">
+                            <div class="coda"><img src="public/images/photo-1517520287167-4bbf64a00d66-50x50.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="capo" ref="online">
+                                <span> Our main targhet is to <br> Developing Yourself <br> as a Leader</span>
+                                <span class="gray">-August 9,2018</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="public/images/photo-1490376840453-5f616fbebe5b-50x50.jpeg" alt="">
-                        <span> Those Other Collage Expenses You Aren't Thinking About</span>
-                        <span>-june 3,2015</span>
+                    <div class="contenitoreimg">
+                        <div class="coda"><img src="public/images/photo-1490376840453-5f616fbebe5b-50x50.jpeg" alt="">
+                        </div>
+                        <div class="capo" ref="online">
+                            <span> Those Other Collage <br> Expenses You Aren't <br> Thinking About</span>
+                            <span class="gray">-june 3,2015</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,5 +109,39 @@ footer {
     width: 80%;
     margin: 0 auto;
     padding-top: 30px;
+}
+
+.contenitoreimg {
+    display: flex;
+    align-items: center;
+}
+
+.coda {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.capo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+span {
+    font-size: 14px;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.gray {
+    color: gray;
+}
+
+img {
+    width: 80px;
 }
 </style>
