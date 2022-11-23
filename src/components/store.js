@@ -33,7 +33,8 @@ export const store = reactive({
             tipo: 'Advanced',
             lezioni: 8,
             ore: 6,
-            tag: 'SPECIAL'
+            tag: 'SPECIAL',
+            prezzo: 49
         },
         {
             image: 'public/images/12345-1-370x200.png',
@@ -42,7 +43,8 @@ export const store = reactive({
             tipo: 'Advanced',
             lezioni: 8,
             ore: 6,
-            tag: 'SPECIAL'
+            tag: 'SPECIAL',
+            prezzo: 49.50
         },
         {
             image: 'public/images/photo-1491897554428-130a60dd4757-370x200.jpeg',
@@ -51,7 +53,8 @@ export const store = reactive({
             tipo: 'Advanced',
             lezioni: 6,
             ore: 6,
-            tag: ''
+            tag: '',
+            prezzo: 49
         },
         {
             image: 'public/images/photo-1416339134316-0e91dc9ded92-370x200.jpeg',
@@ -60,7 +63,8 @@ export const store = reactive({
             tipo: 'Intermediate',
             lezioni: 6,
             ore: 6,
-            tag: 'NEW'
+            tag: 'NEW',
+            prezzo: 49
         },
         {
             image: 'public/images/cathryn-lavery-67852-unsplash-370x200.jpg',
@@ -69,7 +73,8 @@ export const store = reactive({
             tipo: 'Intermediate',
             lezioni: 6,
             ore: 6,
-            tag: ''
+            tag: '',
+            prezzo: 49
         },
         {
             image: 'public/images/photo-1475452779376-caebfb988090-370x200.jpeg',
@@ -78,7 +83,8 @@ export const store = reactive({
             tipo: 'Beginner',
             lezioni: 6,
             ore: 6,
-            tag: 'NEW'
+            tag: 'NEW',
+            prezzo: 49
 
         },
 
