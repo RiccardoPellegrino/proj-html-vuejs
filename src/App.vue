@@ -58,14 +58,10 @@ export default {
   },
   data() {
     return {
-      // store
+
     };
   },
-  // created() {
-  //   start() {
-  //     this.$refs.online.start();
-  //   }
-  // }
+
 }
 
 </script>
