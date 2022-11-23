@@ -16,7 +16,7 @@ export default {
 .padre {
     position: fixed;
     width: 40px;
-    height: 40px;
+    height: 44px;
     bottom: 20px;
     right: 10px;
     background-color: $mineshaft;
