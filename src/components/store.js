@@ -4,19 +4,16 @@ export const store = reactive({
 
     studenti: [
         {
-            nome: "christian",
             titoloCommento: "Come as you Are",
             testo: "Consectetur adipisicing elit. Similique iste laborum ducimus nulla? Architecto vero expedita officia nemo reprehenderit quaerat quia, numquam eos rem dolores dignissimos deserunt sint? Aspernatur voluptates accusamus placeat provident architecto, necessitatibus, quidem tempora quia quos dolores harum dignissimos repudiandae vel ratione deleniti possimus. Enim, architecto aliquam",
             immagine: "public/images/1-100x100.jpg"
         },
         {
-            nome: "Marco",
             titoloCommento: "Paints of the Future",
             testo: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo mollitia veritatis aspernatur vitae temporibus aperiam aliquam deleniti id excepturi, quia, error ut! Odio omnis ipsa dolorem unde quas molestiae, corrupti quae consequuntur voluptas accusamus! Officia nesciunt at magnam, deleniti magni dignissimos non inventore necessitatibus qui quos, unde nam laudantium voluptatibus.",
             immagine: "public/images/2-100x100.jpg"
         },
         {
-            nome: "Marina",
             titoloCommento: "Investing for your Future",
             testo: "Lorem ipsum dolor sit amet, Similique iste laborum ducimus nulla? Architecto vero expedita officia nemo reprehenderit quaerat quia, numquam eos rem dolores dignissimos deserunt sint? Aspernatur voluptates accusamus placeat provident architecto, necessitatibus, quidem tempora quia quos dolores harum dignissimos repudiandae vel ratione deleniti possimus. Enim, architecto aliquam",
             immagine: "public/images/3-100x100.jpg"
