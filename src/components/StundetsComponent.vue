@@ -25,21 +25,18 @@
                             aliquam quae illo tenetur, assumenda fugit vitae placeat minima voluptate repudiandae!
                             Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum quae
                             cum quaerat?</p>
-                        <span>Jhon</span>
                     </div>
                     <div class="user-text">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
                             lorems0 voluptate repudiandae!
                             Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum quae
                             cum quaerat?</p>
-                        <span>Jhon</span>
                     </div>
                     <div class="user-text">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus culpa corporis
                             lorm10 minima voluptate repudiandae!
                             Saepe, magnam? Rerum eaque est voluptatem debitis accusamus, minima dolore aliquid eum quae
                             cum quaerat?</p>
-                        <span>Jhon</span>
                     </div>
                 </div>
 
@@ -79,8 +76,8 @@ export default {
 
 .testimonial-text {
 
-    background-color: blueviolet;
-    color: white;
+    background-color: white;
+    color: black;
     width: 100%;
     height: 350px;
     position: relative;
